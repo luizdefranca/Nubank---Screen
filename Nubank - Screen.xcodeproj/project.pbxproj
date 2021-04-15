@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2548C6A0262877D600890AEB /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2548C69E262877D600890AEB /* ActionView.swift */; };
+		2548C6A1262877D600890AEB /* ActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2548C69F262877D600890AEB /* ActionView.xib */; };
 		25A6EDBF26263DF1004F7445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6EDBE26263DF1004F7445 /* AppDelegate.swift */; };
 		25A6EDC126263DF1004F7445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6EDC026263DF1004F7445 /* SceneDelegate.swift */; };
 		25A6EDC326263DF1004F7445 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6EDC226263DF1004F7445 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2548C69E262877D600890AEB /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		2548C69F262877D600890AEB /* ActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionView.xib; sourceTree = "<group>"; };
 		25A6EDBB26263DF1004F7445 /* Nubank - Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nubank - Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A6EDBE26263DF1004F7445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A6EDC026263DF1004F7445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				25A6EDD6262655FB004F7445 /* MessageView.swift */,
 				25A6EDDD26267778004F7445 /* jjj.swift */,
 				25A6EDD7262655FB004F7445 /* MessageView.xib */,
+				2548C69E262877D600890AEB /* ActionView.swift */,
+				2548C69F262877D600890AEB /* ActionView.xib */,
 				25A6EDC726263DF3004F7445 /* Assets.xcassets */,
 				25A6EDC926263DF3004F7445 /* LaunchScreen.storyboard */,
 				25A6EDCC26263DF3004F7445 /* Info.plist */,
@@ -138,6 +144,7 @@
 			files = (
 				25A6EDCB26263DF3004F7445 /* LaunchScreen.storyboard in Resources */,
 				25A6EDC826263DF3004F7445 /* Assets.xcassets in Resources */,
+				2548C6A1262877D600890AEB /* ActionView.xib in Resources */,
 				25A6EDD9262655FC004F7445 /* MessageView.xib in Resources */,
 				25A6EDC626263DF1004F7445 /* Main.storyboard in Resources */,
 			);
@@ -156,6 +163,7 @@
 				25A6EDD426263E4B004F7445 /* CreatedExtension.swift in Sources */,
 				25A6EDC126263DF1004F7445 /* SceneDelegate.swift in Sources */,
 				25A6EDD8262655FC004F7445 /* MessageView.swift in Sources */,
+				2548C6A0262877D600890AEB /* ActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

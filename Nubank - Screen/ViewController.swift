@@ -23,22 +23,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       let  messageView = instanceFromNib()
-        let  messageView2 = instanceFromNib()
-        let  messageView3 = instanceFromNib()
-        let  messageView4 = instanceFromNib()
+        let messageViewArray = [MessageView(),
+                                MessageView(),
+                                MessageView(),
+                                MessageView(),
+                                MessageView()]
 
-        let messageViewArray = [messageView, messageView, messageView2, messageView3, messageView4]
-
-        messageViewArray.forEach({
-            self.messageStackView.addArrangedSubview($0)
+        let actionViewArray = [ ActionView(),
+                                ActionView(),
+                                ActionView(),
+                                ActionView(),
+                                ActionView(),
+                                ActionView(),
+                                ActionView()]
+        messageViewArray.forEach({ messageView in
+            messageView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                messageView.heightAnchor.constraint(equalToConstant: 160)])
+            self.messageStackView.addArrangedSubview(messageView)
         })
-        
+
+        actionViewArray.forEach({ actionView in
+            actionView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                                            actionView.heightAnchor.constraint(equalToConstant: actionScrollView.frame.height),
+                                            actionView.widthAnchor.constraint(equalTo: actionView.heightAnchor, multiplier: 1)])
+            self.actionStackView.addArrangedSubview(actionView)
+        })
     }
 
-    func instanceFromNib() -> MessageView {
-            let view = UINib(nibName: "MessageView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MessageView
-            return view
-    }
+//    func instanceFromNib() -> MessageView {
+//            let view = UINib(nibName: "MessageView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MessageView
+//            return view
+//    }
 }
 

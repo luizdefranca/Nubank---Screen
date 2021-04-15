@@ -13,7 +13,7 @@ class MessageView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
-    @IBOutlet var contentView: UIView!
+
 
     let nibName = "MessageView"
 
@@ -46,7 +46,7 @@ class MessageView: UIView {
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
         self.addSubview(view)
-        contentView = view
+
         
     }
 

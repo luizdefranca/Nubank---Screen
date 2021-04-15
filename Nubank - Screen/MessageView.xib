@@ -9,43 +9,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageView" customModule="Nubank___Screen" customModuleProvider="target">
             <connections>
-                <outlet property="contentView" destination="i5M-Pr-FkT" id="raB-dR-z2s"/>
                 <outlet property="creditcardImageView" destination="hx5-cF-bnE" id="efq-Pa-7cn"/>
                 <outlet property="inputTextField" destination="QLb-Pi-P6O" id="Up3-ct-Sjk"/>
                 <outlet property="messageLabel" destination="Rry-26-LXY" id="JIh-Et-n58"/>
                 <outlet property="titleLabel" destination="JUb-KQ-up5" id="bbh-8I-gxR"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT" customClass="MessageView" customModule="Nubank___Screen" customModuleProvider="target">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-cF-bnE">
-                    <rect key="frame" x="20" y="14.5" width="65" height="44"/>
+                    <rect key="frame" x="17" y="14.5" width="45" height="29"/>
                     <color key="tintColor" systemColor="systemGray4Color"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="47.5" id="HRc-Xs-hGt"/>
-                        <constraint firstAttribute="width" constant="65" id="UVy-QU-jiV"/>
+                        <constraint firstAttribute="width" constant="45" id="UVy-QU-jiV"/>
+                        <constraint firstAttribute="width" secondItem="hx5-cF-bnE" secondAttribute="height" multiplier="65:47" id="bbL-pC-Z3e"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUb-KQ-up5">
-                    <rect key="frame" x="93" y="25.5" width="309" height="23"/>
+                    <rect key="frame" x="70" y="19.5" width="332" height="19.5"/>
                     <color key="tintColor" systemColor="systemGray5Color"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                     <color key="textColor" systemColor="systemGray4Color"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelMessage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rry-26-LXY">
-                    <rect key="frame" x="20" y="69.5" width="374" height="23"/>
+                    <rect key="frame" x="20" y="54.5" width="374" height="20.5"/>
                     <color key="tintColor" systemColor="systemGray5Color"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <color key="textColor" systemColor="systemGray4Color"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="textFieldInput" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-Pi-P6O">
-                    <rect key="frame" x="20" y="104.5" width="374" height="34"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-Pi-P6O" userLabel="textFieldInput">
+                    <rect key="frame" x="20" y="87" width="374" height="34"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -53,17 +51,17 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="JUb-KQ-up5" firstAttribute="leading" secondItem="hx5-cF-bnE" secondAttribute="trailing" constant="8" symbolic="YES" id="1eE-Cd-0Hi"/>
                 <constraint firstItem="QLb-Pi-P6O" firstAttribute="top" secondItem="Rry-26-LXY" secondAttribute="bottom" constant="12" id="HDx-Bp-GV6"/>
+                <constraint firstItem="JUb-KQ-up5" firstAttribute="leading" secondItem="hx5-cF-bnE" secondAttribute="trailing" constant="8" id="N1y-Tu-WKb"/>
                 <constraint firstItem="Rry-26-LXY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="SEp-1I-PjN"/>
                 <constraint firstAttribute="trailing" secondItem="Rry-26-LXY" secondAttribute="trailing" constant="20" symbolic="YES" id="TS3-R0-8Td"/>
                 <constraint firstAttribute="trailing" secondItem="JUb-KQ-up5" secondAttribute="trailing" constant="12" id="ZSu-Vl-Jwx"/>
+                <constraint firstItem="hx5-cF-bnE" firstAttribute="leading" secondItem="Rry-26-LXY" secondAttribute="leading" constant="-3" id="edv-fv-g7X"/>
                 <constraint firstItem="hx5-cF-bnE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="h88-46-dsU"/>
                 <constraint firstItem="QLb-Pi-P6O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="iIE-oz-Ywg"/>
                 <constraint firstItem="Rry-26-LXY" firstAttribute="top" secondItem="hx5-cF-bnE" secondAttribute="bottom" constant="9" id="jtE-2P-m0W"/>
                 <constraint firstItem="JUb-KQ-up5" firstAttribute="centerY" secondItem="hx5-cF-bnE" secondAttribute="centerY" id="rQj-km-qYu"/>
                 <constraint firstAttribute="trailing" secondItem="QLb-Pi-P6O" secondAttribute="trailing" constant="20" symbolic="YES" id="wPY-7z-1po"/>
-                <constraint firstItem="hx5-cF-bnE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="yfA-vZ-bXI"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-4.3478260869565224" y="93.75"/>
